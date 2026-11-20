@@ -1,0 +1,318 @@
+/* ==========================================================================
+   Bot Traffic Shield - Premium (locked / upgrade) page styles
+   Builds on the variables and components in btsld-admin.css.
+   ========================================================================== */
+
+.btsld-pro-pill {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, var(--btsld-primary) 0%, #8b5cf6 100%);
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    line-height: 1.6;
+}
+
+/* Locked / coming-soon card */
+.btsld-locked-card {
+    max-width: 920px;
+}
+
+.btsld-locked-hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid var(--btsld-slate-200);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.btsld-locked-icon {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(139, 92, 246, 0.1);
+    color: #8b5cf6;
+}
+
+.btsld-locked-icon.btsld-icon-soon {
+    background-color: var(--btsld-warning-light);
+    color: var(--btsld-warning);
+}
+
+.btsld-locked-icon .dashicons {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.btsld-locked-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--btsld-slate-600);
+    margin: 0;
+}
+
+/* Feature checklist */
+.btsld-feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 10px 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btsld-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--btsld-slate-700);
+}
+
+.btsld-feature-list .dashicons {
+    flex: 0 0 18px;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    color: var(--btsld-success);
+}
+
+/* Call to action */
+.btsld-locked-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--btsld-slate-200);
+    padding-top: 20px;
+    margin-top: 24px;
+}
+
+.btsld-locked-note {
+    flex-basis: 100%;
+    font-size: 12px;
+    color: var(--btsld-slate-600);
+    margin: 4px 0 0;
+}
+
+/* Upgrade overview page */
+.btsld-upgrade-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.btsld-upgrade-hero .btsld-locked-desc {
+    max-width: 720px;
+}
+
+.btsld-wrap .btsld-upgrade-hero .button-hero {
+    flex-shrink: 0;
+    padding: 10px 24px !important;
+    font-size: 14px;
+}
+
+.btsld-upgrade-feature {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btsld-upgrade-feature:focus {
+    box-shadow: 0 0 0 2px var(--btsld-primary);
+    outline: none;
+}
+
+.btsld-pro-switch-group {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.btsld-pro-switch-list {
+    display: grid;
+}
+
+.btsld-pro-switch-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 24px;
+}
+
+.btsld-ip-filters,
+.btsld-ip-row-form,
+.btsld-ip-table-wrap + .tablenav-pages {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.btsld-ip-filters {
+    margin-bottom: 16px;
+}
+
+.btsld-ip-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.btsld-ip-table-wrap .widefat {
+    min-width: 1120px;
+}
+
+.btsld-ip-row-form {
+    margin-top: 8px;
+}
+
+.btsld-ip-row-form[hidden] {
+    display: none;
+}
+
+.btsld-ip-row-form input[type="text"] {
+    width: 150px;
+}
+
+.btsld-ip-row-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.btsld-ip-remove-form,
+.btsld-ip-delete-form {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+
+.btsld-ip-icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--btsld-primary, #2271b1);
+    cursor: pointer;
+}
+
+.btsld-ip-icon-button:hover,
+.btsld-ip-icon-button:focus-visible,
+.btsld-ip-icon-button[aria-expanded="true"] {
+    border-color: currentColor;
+    background: var(--btsld-primary-light, #f0f6fc);
+    outline: none;
+}
+
+.btsld-ip-icon-button .dashicons {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.btsld-ip-remove-button {
+    color: #b45309;
+}
+
+.btsld-ip-remove-button:hover,
+.btsld-ip-remove-button:focus-visible {
+    background: var(--btsld-warning-light, #fcf9e8);
+}
+
+.btsld-ip-delete-button {
+    color: var(--btsld-danger, #b32d2e);
+}
+
+.btsld-ip-delete-button:hover,
+.btsld-ip-delete-button:focus-visible {
+    background: var(--btsld-danger-light, #fcf0f1);
+}
+
+.btsld-ip-table-wrap + .tablenav-pages {
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.btsld-upgrade-feature-icon {
+    color: var(--btsld-primary);
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+}
+
+@media screen and (max-width: 782px) {
+    .btsld-upgrade-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btsld-feature-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Grouped premium pages: tabs and section headings ---------------- */
+
+.btsld-group-tabs.nav-tab-wrapper {
+    flex-wrap: wrap;
+}
+
+.btsld-tab-pill {
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 3px;
+    background: var(--btsld-primary);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.btsld-tab-pill.is-soon {
+    background: var(--btsld-slate-200);
+    color: var(--btsld-slate-600);
+}
+
+.btsld-section-heading {
+    margin: 0 0 20px;
+}
+
+.btsld-section-heading h2 {
+    margin: 0 0 4px;
+    font-size: 18px;
+    color: var(--btsld-slate-900);
+}
+
+.btsld-section-heading p {
+    margin: 0;
+    color: var(--btsld-slate-600);
+}
+
+.btsld-upgrade-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 28px 0 12px;
+    font-size: 16px;
+    color: var(--btsld-slate-900);
+}
+
+.btsld-upgrade-group .dashicons {
+    color: var(--btsld-primary);
+}
